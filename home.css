@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Mono:wght@100&family=Inter:wght@200;300&family=Silkscreen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*MAIN*/
+.main {
+    height: 100vh;
+    background-image: url("Assets/mainBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*NAVBAR*/
+.navbar {
+    height: 15vh;
+    background-color: rgba(116, 116, 116, 0.1) !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-family: Abel;
+    font-size: 1.5em !important;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: #f0b201 !important;
+}
+
+.main .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main #welcome {
+    position: absolute;
+    transform: translateY(-42vh);
+    color: #f0b201;
+    font-size: 4vh;
+    font-family: Silkscreen;
+    font-weight: 300;
+}
+.main #logoText {
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+
+.main #logoText:hover {
+    filter: drop-shadow(5px 5px 15px #f0b201);
+}
+
+.main #tagline {
+    position: absolute;
+    transform: translateY(-15vh);
+    color: #fdd565;
+    font-size: 2.5vh;
+    font-family: Abel;
+    font-weight: 300;
+}
+/*MAIN*/
+
+/*SECTIONS*/
+.sect {
+    padding: 100px 0 550px 0;
+    height: 100%;
+    background-image: linear-gradient( rgba(3, 14, 28, 0.8), rgba(16, 36, 59, 0.5)),url("Assets/sectBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: 5px solid rgb(23, 34, 62);
+}
+/*
+.sect img {
+    height: 500px;
+    width: 600px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+    margin: 0 -35px 0 -35px;
+}
+
+.sect img:hover {
+    scale: 1.05;
+    filter: drop-shadow(5px 5px 25px #f0b201);
+}
+.sectone {
+    justify-content: center;
+    width: 100%;
+}
+.secttwo {
+    justify-content: center;
+    width: 100%;
+}
+
+.secttwo img {
+    margin-top: -80vh;
+}
+
+SECTIONS*/
+

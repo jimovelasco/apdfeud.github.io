@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(21, 21, 21) !important;
+}
+
+#main {
+    height: 100%;
+    margin-top: 20vh;
+    justify-content: center;
+    text-align: center;
+    transition-property: display;
+    transition-delay: 1s all;
+    cursor: default;
+}
+
+#main:hover > 
+    #logoLeft {    
+        animation: toLeftIn .8s forwards;
+    }
+    #main:hover > #logoRight {
+        animation: toRightIn .8s forwards;
+    }
+    #main:hover > #logoText {
+        animation: fadeIn 1s forwards;
+        cursor: pointer;
+    }
+    
+/*ANIMATIONS*/
+@keyframes toLeftIn {
+    from {right: 0%}
+    to {right: 20%;
+        filter: drop-shadow(5px 5px 15px #f0b201);
+    }
+}
+@keyframes toRightIn {
+    from {left: 0%}
+    to {left: 20%;
+        filter: drop-shadow(5px 5px 15px #f0b201);
+    }
+}
+@keyframes toLeftOut {
+    from {right: 20%}
+    to {right: 0%;}
+}
+@keyframes toRightOut {
+    from {left: 20%}
+    to {left: 0%;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;
+        scale: 1.1;
+        filter: drop-shadow(5px 5px 15px #f0b201);
+    }
+}
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+/*/ANIMATIONS*/
+
+#main #logoLeft, #logoRight { 
+    position: relative;
+    top: 50%;
+}
+
+#main #logoLeft{
+    height: 60vh;
+    animation-name: toLeftOut;
+    animation-duration: 1s;
+}
+
+#main #logoRight{
+    height: 60vh;
+    animation-name: toRightOut;
+    animation-duration: 1s;
+}
+
+#main #logoText {
+    position: absolute;
+    top: 35%;
+    height: 20%;
+    opacity: 0;
+}
+

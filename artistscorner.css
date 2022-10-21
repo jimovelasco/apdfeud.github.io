@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=IBM+Plex+Mono:wght@100&family=Inter:wght@200;300&family=Silkscreen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #132230 !important;
+}
+.navbar {
+    height: 15vh;
+    background-color: rgba(116, 116, 116, 0.1) !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-family: Abel;
+    font-size: 1.5em !important;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: #f0b201 !important;
+}
+h2{
+    font-family: Abel;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.big-shop{
+    width: 90%;
+    margin: 150px auto; 
+}
+.big-shop .shop-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.big-shop .shop-title h2{
+    font-weight: 700;
+    font-family: 'Fenix' , serif;
+}
+.big-shop .shop-title p{
+    font-size: 15px;
+}
+.big-shop .shop-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.shop-flex .shop-one{
+    width: 26%;
+}
+.shop-flex img{
+    width: 100%;
+}
+.shop-flex .shop-two{
+    width: 44%;
+}
+.shop-flex .image-one{
+    position: relative;
+    margin-bottom: 20px;
+}
+.shop-flex .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.shop-flex .overlay .txt{
+    color: #FFF;
+}
+.shop-flex .overlay .txt h3{
+    margin-bottom: 3px;
+}
+.shop-flex .overlay .txt span{
+    color: #F0B201    ;
+}
+.shop-flex .overlay .link{
+    position: absolute;
+    bottom: 50px;
+}
+.shop-flex .overlay .link a{
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+.shop-flex .overlay .link i{
+    vertical-align: middle;
+    transition: padding .4s ease-in-out;
+    font-size: 15px;
+}
+.shop-flex .overlay .link a:hover i{
+    padding-left: 3px;
+}
+.shop-flex .overlay .link a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    background: #F0B201;
+    width: 100%;
+    height: 2px;
+    transition: left .4s ease-in-out;
+}
+.shop-flex .overlay .link a:hover::before{
+    left: 0;
+}
+
+.shop-flex .image-one:hover .txt{
+    animation: job1 .7s ease-in-out forwards;
+}
+
+.shop-flex .image-one:hover .link{
+    animation: job1_link .7s ease-in-out forwards;
+}
+.shop-flex .image-one:hover .overlay{
+    opacity: 1;
+}
+
+.shop-flex .shop-two{
+    position: relative;
+    height: 100%;
+}
+
+.shop-flex .shop-two:hover .txt{
+    animation: job1 .7s ease-in-out forwards;
+}
+
+.shop-flex .shop-two:hover .link{
+    animation: job1_link .7s ease-in-out forwards;
+}
+.shop-flex .shop-two:hover .overlay{
+    opacity: 1;
+}
