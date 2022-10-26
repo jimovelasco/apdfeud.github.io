@@ -10,25 +10,6 @@ body {
   background: #111111;
 }
 
-/*NAVBAR*/
-.navbar {
-  height: 15vh;
-  background-color: rgba(116, 116, 116, 0.1) !important;
-}
-
-.nav-link {
-  color: #ffffff !important;
-  font-family: Abel;
-  font-size: 1.5em !important;
-  font-weight: 700;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.nav-link:hover {
-  color: #f0b201 !important;
-}
-
 .honeycomb {
   display: flex;
   flex-wrap: wrap;
